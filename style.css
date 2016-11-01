@@ -1,0 +1,292 @@
+@import 'https://fonts.googleapis.com/css?family=Cinzel';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  box-sizing: border-box;
+}
+
+/* ----- =structure ----- */
+ 
+header {
+  height: 100px;
+  background-color: #f1ebe3;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+
+nav{}
+
+.DLC-logo {
+  width: 100px;
+  display: inline-block;
+}
+
+.DLC-logo-hidden {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 899px) {
+  .DLC-logo-hidden {
+    display: none
+  }
+}
+
+.navbar-default {
+  background-color: transparent;
+}
+
+.navbar-default .container-fluid .navbar-collapse ul li a {
+  font-size: 24px;
+   color: #428327;
+   text-decoration:none; 
+   font-family: 'Cinzel', serif;
+}
+.navbar-brand img{
+  display: block;
+  width: 100px;
+}
+/* the code below makes the image not show on mobile */
+.DLC-logo {
+  display: none;
+}
+
+@media only screen and (max-width: 899px) {
+  .DLC-logo {
+    display: inline-block;
+    float: left;
+    margin: 0;
+  }
+}
+.navbar-default {
+    background-color: transparent;
+    border: none;
+  }
+
+#top-nav {
+  text-align: center;
+  display: none;
+
+}
+@media (min-width: 900px) {
+#top-nav {
+  display: block;
+
+}  
+}
+#top-nav ul{
+  margin: 0;
+   padding: 0;
+   list-style: none;
+   display: inline-block;
+   
+}
+#top-nav ul li {
+  float: left;
+  padding: 17px 15px 12px 15px;
+  display: block;
+     
+
+}
+#top-nav ul li a {
+   font-size: 24px;
+   color: #428327;
+   text-decoration:none; 
+   font-family: 'Cinzel', serif;
+}
+ 
+#top-nav ul li a:hover {
+   color: #28527b;
+}
+
+#top-nav img {
+  padding-right: 5px;
+  width: 150px;
+
+}
+.full-image {
+  width: 100%;
+  margin-top: 100px
+}
+.h1-text-center {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+
+}
+
+ 
+main {
+  min-height: 400px;
+  background-color: #fff;
+
+}
+.img-wrapper {
+ /*width: 100%;*/
+ margin-left: 0px;
+ margin-top: 100px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ padding-left: 0;
+ padding-right: 0;
+ 
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+.left-img {
+  width: 50%;
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;  
+}
+
+.left-img img {
+  width: 100%;
+}
+
+.right-img {
+  width: 50%;
+  float: left;
+}
+
+.right-img img{
+  width: 100%;
+}
+/* -- Clearfix -- */
+.img-row:after,
+.img-wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
+}  
+
+.h1-text-center {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: #28527b;
+
+}
+.h2-text-center {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: #dd6514;
+
+}
+.p-text {
+  font-family: 'Cinzel', serif;
+  color: #28527b;
+  text-align: center;
+  font-size: 16px;
+
+}
+/*.portfolio {
+  width: 980px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: #b21c1c;
+  /*font-size: 30px*/
+
+}  
+.portfolio {
+  position: static;
+}
+.red-header {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: #b21c1c;
+}
+.port-title {
+  width:300px;
+  float: left;
+  margin: 10px;
+}
+.port-column {
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  overflow: scroll;
+}
+.port-img {
+  width: 100%;
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.info-column {
+  /*width: 980px;*/
+  margin: auto;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: #b21c1c;
+  font-size: 24px;
+  overflow: scroll;
+  
+}
+.column {
+  width: 29.333%;
+  float: left;
+  padding-left: 3%;
+}
+
+.row-two {
+  width: 300px;
+  float: left;
+  border: 1px solid blue;
+}
+.row-three {
+  width: 300px;
+  float: left;
+  border: 1px solid blue;
+}
+form {
+  width: 80%;
+  margin: auto;
+}
+
+form p {
+  color: #b21c1c;
+  font-size: 18px;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+input[type=submit],
+input[type=reset] {
+  width: 100px;
+  float: right;
+  margin-left: 10px;
+}
+
+footer {  
+  height: 100px;
+  background-color: #f1ebe3;
+  margin-top: 30px;
+  width: 100%;
+} 
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+ 
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
